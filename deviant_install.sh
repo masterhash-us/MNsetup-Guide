@@ -12,7 +12,7 @@ COIN_NAME='Deviant'
 COIN_PORT=22618
 RPC_PORT=22617
 
-NODEIP=$(curl -s4 icanhazip.com)
+NODEIP=$(dig +short -6 myip.opendns.com aaaa @resolver1.ipv6-sandbox.opendns.com)
 
 BLUE="\033[0;34m"
 YELLOW="\033[0;33m"
